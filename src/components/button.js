@@ -1,7 +1,8 @@
-export default function Button(){
+import './button.scss';
+export default function Button({label}){
     return(
-        <div>
-            <button></button>
+        <div className='btn'>
+            <button>{label}</button>
         </div>
     );
 }

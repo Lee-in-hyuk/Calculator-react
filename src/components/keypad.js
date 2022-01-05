@@ -1,5 +1,7 @@
-export default function Keypad(){
+export default function Keypad({children}){
     return(
-        <div></div>
+        <div className="kp">
+            {children}
+        </div>
     );
 }

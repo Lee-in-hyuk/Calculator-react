@@ -1,5 +1,7 @@
 export default function Display(){
     return(
-        <div></div>
+        <div className="dp">
+            <input type="text"/>
+        </div>
     );
 }
