@@ -1,13 +1,21 @@
 import Display from './components/display';
 import Keypad from './components/keypad';
 import Button from './components/button';
+import { useState } from 'react';
 
 import './App.css';
 
 function App() {
+  const [ input, setInput ] = useState("");
+   
+  console.log(input);
+  console.log(Button.value);
+  function onClick(e){
+    // const btnValue =
+  }
   return (
     <div className="App">
-      <Display />
+      <Display input={input.value}/>
         <Keypad>
             <Button label="C" value="clear" />
             <Button label="7" value="7" />

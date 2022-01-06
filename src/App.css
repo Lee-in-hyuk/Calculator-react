@@ -1,3 +1,4 @@
+* {box-sizing: border-box;}
 .App {
   width: 400px;
   height: 500px;

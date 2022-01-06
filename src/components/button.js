@@ -1,8 +1,8 @@
 import './button.scss';
-export default function Button({label}){
+export default function Button({label,size,value}){
     return(
         <div className='btn'>
-            <button>{label}</button>
+            <button data-size={size} value={value}>{label}</button>
         </div>
     );
 }

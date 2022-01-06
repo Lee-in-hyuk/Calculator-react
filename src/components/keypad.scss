@@ -1,4 +1,8 @@
 .kp {
     display: flex;
-    
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
 }
