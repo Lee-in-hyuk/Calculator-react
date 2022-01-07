@@ -1,24 +1,27 @@
 import Display from './components/display';
 import Keypad from './components/keypad';
 import Button from './components/button';
-import { useState } from 'react';
+import { useState,useRef } from 'react';
 
 import './App.css';
 
 function App() {
   const [ input, setInput ] = useState("");
-   
-  console.log(input);
-  console.log(Button.value);
+  // const 유즈러프써써 해보기
+  // console.log(input);
+  // console.log(Button.value);
   function onClick(e){
-    // const btnValue =
+    const inputValue = e.target.value;
+    setInput(inputValue);
+    console.log(inputValue);
+    // input = inputValue; 유즈러프써서 해보기
   }
   return (
     <div className="App">
       <Display input={input.value}/>
         <Keypad>
             <Button label="C" value="clear" />
-            <Button label="7" value="7" />
+            <Button label="7" value="7" onClick={onClick}/>
             <Button label="4" value="4" />
             <Button label="1" value="1" />
             <Button label="0" value="0" />
