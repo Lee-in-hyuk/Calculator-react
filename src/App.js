@@ -7,13 +7,14 @@ import './App.css';
 
 function App() {
   const [ input, setInput ] = useState("");
-  // const 유즈러프써써 해보기
+  // useCallback함수 써서 Display에 onChange쓰고
+  // const onChange = useCallback(e) 써보기
   // console.log(input);
   // console.log(Button.value);
   function onClick(e){
-    const inputValue = e.target.value;
-    setInput(inputValue);
-    console.log(inputValue);
+    const btnValue = e.target.value;
+    setInput(btnValue);
+    console.log(btnValue);
     // input = inputValue; 유즈러프써서 해보기
   }
   return (
