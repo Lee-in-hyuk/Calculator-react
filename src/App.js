@@ -11,7 +11,6 @@ import './App.css';
 //eval함수써서 해보기 (사칙연산을 해주는 함수)
 function App() {
   const [ input, setInput ] = useState("");
-  // let a = input.join("");
   console.log(input);
 
   //onChange 없어도 작동은 잘 되는데, value를 onChange없이 썼다고 console에 경고떠서 작성함.
